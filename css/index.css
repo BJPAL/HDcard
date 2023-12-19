@@ -1,0 +1,426 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    display: block;
+}
+button{
+    background-color: transparent;
+    border: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+body{
+    color: #fff;
+    background-color: #1e1f21;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#headerwrap{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 98;
+}
+
+/* header */
+header{
+    background-color: #353535;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding:  0 150px;
+    justify-content: space-around;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    font-family: 'Youandi';
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+    margin: 0 15px;
+    
+}
+header ul li a{
+    position: relative;
+    top: 10px;
+    left: -30px;
+    line-height: 30px;
+}
+header .searchbox{
+    width: 400px;
+    height: 40px;
+    line-height: 35px;
+    padding: 0 15px;
+    font-size: 15px;
+    border: 2px solid #fff;
+    border-radius: 35px;
+}
+header .searchbox img{
+    display: inline;
+    margin-right: 10px;
+    
+}
+header .searchbox a{
+    position: relative;
+    color: #cccccc;
+    font-weight: 500;
+}
+header .searchbox input{
+    background: none;
+    border: 0;
+    color: #fff;
+    width: 300px;
+}
+header .searchbox button{
+    position: absolute;
+    top: 20px;
+    scale: 0.4;
+    display: none;
+}
+header .searchbox input:focus{
+    outline: 0;
+}
+header .login button{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 8px;
+    margin-right: 13px;
+}
+header .login a{
+    font-family: 'Youandi';
+}
+header .login a:first-of-type{
+    font-size: 22px;
+    border-right: 2px solid #fff;
+    padding-right:10px;
+    margin-right: 5px;
+}
+header .login a:last-of-type{
+    font-size: 18px;
+} 
+
+/* news */
+#news{
+    display: flex;
+    color: #424242;
+    padding : 0 200px ;
+    justify-content: space-around;
+    width: 100%;
+    height: 45px;
+    background-color: #9e9e9e;
+}
+#news h2{
+    font-size: 16px;
+    line-height: 45px;
+    font-weight: 700;
+}
+#news ul{
+    line-height: 45px;
+    display: flex;
+}
+#news ul li{
+    font-size: 13px;
+    margin: 0 10px;
+} 
+
+/* popbox */
+#popupbox{
+    padding: 0 300px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: #292a2d;
+    box-shadow: 1px 1px 5px #1f1f1f;
+}
+#popupbox h1{  
+    font-size: 20px;
+    line-height: 50px;
+}
+#popupbox .closebox{
+    display: flex;
+    line-height: 50px;
+}  
+#popupbox .closebox input[id="cb1"]{
+    display: none;
+}
+#popupbox .closebox input[id="cb1"] + label{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+#popupbox .closebox input[id="cb1"]:checked + label{
+    background-color: #fff;
+}
+#popupbox .closebox label{
+    position: relative;
+    top: 18px;
+}
+#popupbox .closebox > span{
+    color: #fff;
+   font-size: 15px;
+   font-weight: 200;
+   margin: 0 10px;
+} 
+
+/* slide */
+#slide{
+    margin-top: 225px;
+    height: 500px;
+    background-color: #595b64;
+}
+#slide .row{
+    display: flex;
+    justify-content: space-around;
+
+}
+#slide .row .slide{
+    margin-top: 30px;
+    display: flex;
+}
+/* finance */
+#finance{
+    margin-top: 100px;
+}
+#finance .row:first-child{
+    justify-content: space-between;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 55px;
+}
+#finance .row:first-child > .col-12{
+    display: flex;
+    justify-content: space-between;
+    font-size:35px ;
+}
+#finance .row:last-child .col-4 .card{
+    padding: 8px 20px 0 20px;
+    height: 205px;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    background-color: #292a2d;
+}
+#finance .row:last-child .col-4 .card p{
+    color: #848484;
+}
+#finance .row:last-child .col-4 .card p:first-of-type{
+    font-size: 14px;
+}
+#finance .row:last-child .col-4 .card h3{
+    text-align: center;
+    font-size: 27px;
+}
+#finance .row:last-child .col-4 .card p:nth-of-type(2){
+    font-size: 10px;
+    margin-top: 15px;
+}
+#finance .row:last-child .col-4 .card span:first-of-type{
+    text-align: center;
+    font-size: 12px;   
+    margin-top: -3px; 
+    margin-bottom: 10px ;
+}
+#finance .row:last-child .col-4 .card p:last-of-type{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+#finance .row:last-child .col-4 .card p:last-of-type span{ 
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+    margin-right: 5px;
+}
+#finance .row:last-child .col-4 .card a{
+    position: relative;
+    bottom: 15%;
+    left: 93%;
+}
+
+/* cards */
+.cards{
+    margin-top: 70px;
+}
+.cards .col-6{
+    display: flex;
+}
+.cards .col-6 .text{
+    width: 50%;
+}
+.cards .col-6 h2{
+    width: 50%;
+    font-family: 'Youandi';  
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.cards .col-6 p{
+    font-size: 14px;
+}
+.cards .col-6 .cardimg{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards .col-6 .cardimg div{
+    width: 50%;
+    transition: 0.4s;
+}
+.cards .col-6 .cardimg div img{
+    position: relative;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.cards .col-6 .cardimg div p{
+    font-size: 10px;
+    text-align: center;
+}
+.cards .col-6 .cardimg div:hover{
+    transform: scale(120%);
+}
+/* benefit */
+#benefit{
+    margin-top: 100px;
+}
+#benefit .row:first-child{
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+#benefit .row:first-child > .col-12{
+    display: flex;
+    justify-content: space-between;
+    font-size:35px ;
+}
+#benefit .row:first-child > .col-12 h1{
+    font-family: 'Youandi';
+}
+#benefit .row:last-child{
+    margin-bottom: 100px;
+}
+#benefit .row:last-child .col-3 img{
+    opacity: 0.7;
+    transition: 0.5s;
+}
+#benefit .row:last-child .col-3 img:hover{
+    opacity: 1;
+    scale: 1.05;
+}
+#benefit .row:last-child .col-3 img{
+    margin-bottom: 10px;
+}
+#benefit .row:last-child .col-3 p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* culture·space */
+#culture{
+    margin-bottom: 100px;
+}
+#culture .row:first-child > div{
+    text-align: center;
+}   
+#culture .row:first-child > .col-12{
+    margin-bottom: 30px;
+}
+#culture .row:first-child > .col-12 h1{
+    font-family: 'Youandi';
+}
+
+#culture .row:last-child .col-6{
+    padding: 0;
+    margin-bottom: 50px;
+}
+#culture .row:last-child .col-6 > a{
+    height: 45px;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    padding: 0 5px;
+}
+#culture .row:nth-child(2) .textbox{
+  text-align: right;
+}
+#culture .row:nth-child(2) .textbox p{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+#culture .row:nth-child(2) .textbox span{
+    color: #BFBFBF;
+}
+#culture .row:last-child .link a p{
+    line-height: 45px;
+    font-size: 14px;
+    font-family: 'Youandi';
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: #353535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:12px;
+}
+footer > div{
+    width: 20%;
+}
+footer > div:nth-child(2){
+    width:40%;
+}
+footer .callnum li,footer .link ul li{
+    margin-top: 10px;
+}
+footer .callnum li:first-child{
+    margin-top:20px;
+}
+footer .link ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .link ul li{
+    width: 50%;
+    color:#979797;
+}
+footer .text .sitelink a{
+    margin-right: 35px;
+}
+footer .text .sitelink {
+    margin-bottom: 10px;
+}
+footer .text .copyright{
+    color:#979797;
+}
+footer .text .copyright .iconimg{
+    display: flex;
+}
+footer .text .copyright .iconimg img{
+    margin-right: 20px;
+}
+
+/* topticon */
+
+#top{
+    position: fixed;
+    bottom: 50px;
+    right: 150px;
+    z-index: 999;
+    display: none;
+}
